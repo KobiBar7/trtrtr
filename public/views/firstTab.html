@@ -1,0 +1,50 @@
+<div class="firstTab">
+
+    <form>
+        <table>
+            <tr>
+                <td class="txt">תפקיד</td>
+                <td class="txt">סוג עובד/ת</td>
+
+            </tr>
+            <tr class="spaceUnder">
+                <td>
+                    <select>
+                        <option ng-repeat="t in types">{{t}}</option>
+                    </select>
+                </td>
+
+
+                <td>
+                    <select>
+                        <option ng-repeat="r in roles">{{r}}</option>
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class="txt">מס' רישיון</td>
+                <td class="txt">תאריך תחילת העבודה</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+
+
+                <td>
+                  
+                        <div class="input-group date" id="datetimepicker">
+                            <input type="text" class="form-control" ng-init="initDateTime()" /> <span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span></span>
+                        </div>
+                </td>
+
+            </tr>
+
+
+
+        </table>
+    </form>
+    </div>

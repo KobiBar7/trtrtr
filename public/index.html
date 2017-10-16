@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <title></title>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="styles/newWorkerController.css" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+
+  <script type="text/javascript" src="scripts/js/moment-with-locales.js"></script>
+    <script type="text/javascript" src="scripts/js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="scripts/js/bootstrap-datetimepicker.css"></script>
+
+
+
+
+  <script type="text/javascript" src="scripts/app.js"></script>
+
+
+  <script type="text/javascript" src="scripts/controllers/newWorkerFisrtController.js"></script>
+  <script type="text/javascript" src="scripts/controllers/newWorkerSecondController.js"></script>
+
+
+
+
+</head>
+
+<body ng-controller="newWorkerFisrtController">
+
+  <div class="newWorker">
+
+    <div class="header">
+      <div class="headerTxt">
+        <div class="txt"> קליטת עובד חדש </div>
+        <div class="txt"> פרטים מקצועיים </div>
+      </div>
+
+      <div class="headerBtn">
+
+        <a class="button icon" href="#/second"><span class="secondTab"></span></a>
+
+        <a class="button icon" href="#/first"><span class="firstTab"></span></a>
+
+      </div>
+    </div>
+
+    <br>
+
+    <div class="tabs">
+      <div ng-view></div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
